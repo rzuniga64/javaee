@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Thread Safety</title>
+</head>
+<body>
+	<!-- page that gives us some options and post to threasadegetseed and drive
+	     us to a specfic operation we select. -->
+	<table style="width:600px;">
+		<tr>
+			<td style="width:100%;">
+				<form id="formNonThreadSafe" method="post"
+					action="threadsafegetseed.do">
+					<span>Select One:</span><br>
+					<input type="radio" name="threadsafetyselection"
+					    value="requestthread" />Non Thread Safe Request
+												Level Attributes
+					<br>
+					<input type="radio" name="threadsafetyselection" 
+						value="nonthreadsafe" />Non Thread Safe
+												Context Level Attributes
+					<br>
+					<input type="radio" name="threadsafetyselection" 
+						value="threadsafe" />Thread Safe
+                                             Context Level Attributes
+                    <br>
+					<input type="submit" value="Execute" />
+				</form>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

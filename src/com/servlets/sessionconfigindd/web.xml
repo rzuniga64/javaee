@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <session-config>
+        <session-timeout>20</session-timeout>
+        <cookie-config>
+            <!-- We can make sure that it won't let anthing but a http object
+                 manage the session. We oon't want crazy javascript hijacking
+                 the sessions. To do this set <http-only> to true.
+            -->
+            <http-only>true</http-only>
+            <!-- if we are using SSL we want cookie stored on secure layer.
+                 All transmission between web client and server is encrypted.
+                 But even if we are comming from a non-HTTPS destination  or
+                 source on our client we can still guarantee that the cookie
+                 stored and transmitted securely by setting <secure> to true
+            -->
+            <secure>true</secure>
+            <!-- set how long cookie will be alive on the computer. -->
+            <max-age>23</max-age>
+        </cookie-config>
+    </session-config>
+
+</web-app>

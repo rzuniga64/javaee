@@ -1,0 +1,31 @@
+DROP TABLE IF EXISTS `userinfo`;
+
+CREATE TABLE `world`.`userinfo` (
+  `ID` INT NOT NULL AUTO_INCREMENT,
+  `UserName` VARCHAR(45) NOT NULL,
+  `Password` VARCHAR(45) NOT NULL,
+  `AuthLevel` INT NOT NULL,
+  PRIMARY KEY (`ID`)
+  )  ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `world`.`userinfo`
+(`UserName`,
+`Password`,
+`AuthLevel`)
+VALUES
+(
+'admin',
+'99admin',
+2);
+
+INSERT INTO `world`.`userinfo`
+(`UserName`,
+`Password`,
+`AuthLevel`)
+VALUES
+(
+'infinite_skills',
+'12345678',
+1);
+
+SELECT * FROM userinfo; ;
