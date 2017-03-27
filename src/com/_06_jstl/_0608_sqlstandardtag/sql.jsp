@@ -16,7 +16,7 @@
 		<tr>
 			<td>setDataSource</td>
 			<td><sql:setDataSource var="worlddata" driver="com.mysql.jdbc.Driver"
-				url="${initParam.dbURL}"
+				url="${initParam.dburl}"
 				user="${initParam.dbuserid}"
 				password="${initParam.dbuserpwd}" />
 				[see code]
