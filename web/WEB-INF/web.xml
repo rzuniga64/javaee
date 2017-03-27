@@ -22,7 +22,7 @@
     </context-param>
     <context-param>
         <param-name>baseURL</param-name>
-        <param-value>http://localhost:8082/javaee_war_exploded</param-value>
+        <param-value>http://localhost:8080/javaee_war_exploded</param-value>
     </context-param>
     <context-param>
         <param-name>copyright</param-name>
@@ -34,11 +34,11 @@
     </context-param>
     <context-param>
         <param-name>dbuserid</param-name>
-        <param-value>dbuser</param-value>
+        <param-value>rzuniga64</param-value>
     </context-param>
     <context-param>
         <param-name>dbuserpwd</param-name>
-        <param-value>12dbuser</param-value>
+        <param-value>aggies92</param-value>
     </context-param>
     <context-param>
         <param-name>dbinitcat</param-name>
